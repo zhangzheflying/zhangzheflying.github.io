@@ -81,3 +81,4 @@ deploy:
   type: git
   repo: https://github.com/zhangzheflying/zhangzheflying.github.io.git
   branch: master
+  email: zhangzheflying@126.com

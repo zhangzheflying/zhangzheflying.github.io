@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2022-09-25T12:41:55.763Z</updated>
+  <updated>2022-09-25T17:22:27.200Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yoursite.com/2022/09/25/big-ming-web-page/"/>
     <id>http://yoursite.com/2022/09/25/big-ming-web-page/</id>
     <published>2022-09-25T12:41:55.000Z</published>
-    <updated>2022-09-25T12:41:55.763Z</updated>
+    <updated>2022-09-25T17:22:27.200Z</updated>
     
     <summary type="html">
     
@@ -36,7 +36,7 @@
     <link href="http://yoursite.com/2019/10/14/ddd/"/>
     <id>http://yoursite.com/2019/10/14/ddd/</id>
     <published>2019-10-14T13:52:00.000Z</published>
-    <updated>2019-10-14T13:52:00.000Z</updated>
+    <updated>2022-09-25T17:22:27.200Z</updated>
     
     <summary type="html">
     
@@ -51,7 +51,7 @@
     <link href="http://yoursite.com/2019/10/14/text2/"/>
     <id>http://yoursite.com/2019/10/14/text2/</id>
     <published>2019-10-14T13:50:22.000Z</published>
-    <updated>2019-10-14T13:50:22.000Z</updated>
+    <updated>2022-09-25T17:22:27.201Z</updated>
     
     <summary type="html">
     
@@ -66,7 +66,7 @@
     <link href="http://yoursite.com/2019/10/14/test/"/>
     <id>http://yoursite.com/2019/10/14/test/</id>
     <published>2019-10-14T13:26:07.000Z</published>
-    <updated>2019-10-14T13:26:07.000Z</updated>
+    <updated>2022-09-25T17:22:27.200Z</updated>
     
     <summary type="html">
     
@@ -81,7 +81,7 @@
     <link href="http://yoursite.com/2019/10/12/JSON-Schema-introduction/"/>
     <id>http://yoursite.com/2019/10/12/JSON-Schema-introduction/</id>
     <published>2019-10-12T03:44:26.000Z</published>
-    <updated>2019-10-14T14:34:00.000Z</updated>
+    <updated>2022-09-25T17:22:27.199Z</updated>
     
     <content type="html"><![CDATA[<h3 id="JSON-Schema"><a href="#JSON-Schema" class="headerlink" title="JSON-Schema"></a>JSON-Schema</h3><p>定义了如何基于JSON格式描述JSON数据结构的规范，进而提供数据校验、文档生成和接口数据交互控制等一系列能力，自验证的，本身就是JSON。</p><p>它的特性和用途，可以大致归纳为以下几点：</p><h3 id="JSON的三种结构：-映射，序列，标量"><a href="#JSON的三种结构：-映射，序列，标量" class="headerlink" title="JSON的三种结构： 映射，序列，标量"></a>JSON的三种结构： 映射，序列，标量</h3><blockquote><p>从结构上看，所有的数据（data）最终都可以分解成三种类型：<br>第一种类型是标量（scalar），也就是一个单独的字符串（string）或数字（numbers），比如”北京”这个单独的词；<br>第二种类型是序列（sequence），也就是若干个相关的数据按照一定顺序并列在一起，又叫做数组（array）或列表（List），比如”北京，上海”；<br>第三种类型是映射（mapping），也就是一个名/值对（Name/value），即数据有一个名称，还有一个与之相对应的值，这又称作散列（hash）或字典（dictionary），比如”首都：北京”。</p></blockquote><p>&emsp;&emsp;数据构成的最小单元就是如此，例如只要有了数组（array）对应于sequence，和对象（object）对应于mapping，在填充上基本的数值（value）对应scalar，就能够储存一切数据了。<br>&emsp;&emsp;21世纪初，Douglas Crockford(道格拉斯.克罗克福德)寻找一种简便的数据交换格式，能够在服务器之间交换数据。当时通用的数据交换语言是XML，但是Douglas Crockford觉得XML的生成和解析都太麻烦，所以他提出了一种简化格式，也就是Json。<br>&emsp;&emsp;Json的规格非常简单，只用一个页面几百个字就能说清楚，而且Douglas Crockford声称这个规格永远不必升级，因为该规定的都规定了。</p><blockquote><ol><li>并列的数据之间用逗号（”, “）分隔。(各种类型数据分隔关系)</li><li>映射用冒号（”: “）表示。（表示key－value映射关系）</li><li>并列数据的集合（数组）用方括号(“[]”)表示。（表示sequence类型）</li><li>映射的集合（对象）用大括号（”{}”）表示。(表示mapping类型)</li></ol></blockquote><p>&emsp;&emsp;上面四条规则，就是Json格式的所有内容。</p><h3 id="JSON范式（JSON-Schema）"><a href="#JSON范式（JSON-Schema）" class="headerlink" title="JSON范式（JSON-Schema）"></a>JSON范式（JSON-Schema）</h3><p>&emsp;&emsp;JSON-Schema是</p><blockquote><ol><li>描述JSON数据格式；</li><li>简洁人机可读的文档；</li><li>能够完成结构上的验证，如</li><li>1 自动化测试；</li><li>2 校验客户端提交的数据。</li></ol></blockquote><p>&emsp;&emsp; JSON Schema：定义了如何基于 JSON 格式描述 JSON 数据结构的规范，进而提供数据校验、文档生成和接口数据交互控制等一系列能力，自验证，本身就是JSON。</p><p>&emsp;&emsp; 它的特性和用途，可以大致归纳为以下几点：</p><h4 id="用于描述数据结构"><a href="#用于描述数据结构" class="headerlink" title="用于描述数据结构"></a>用于描述数据结构</h4><p>&emsp;&emsp;   在描述 JSON 数据时，如果数据本身的复杂度很高，高到三维四维， JSON Schema 利用 object 和 array 字段类型的反复嵌套实现。<br>&emsp;&emsp;  当然，除了键值等基本信息，规范层面还提供了丰富的关键词支持，如果想通过自定义扩展字段，解决特定场景的业务需求，也是非常方便的。</p><h4 id="用于构建人机可读的文档"><a href="#用于构建人机可读的文档" class="headerlink" title="用于构建人机可读的文档"></a>用于构建人机可读的文档</h4><p>&emsp;&emsp; 计算机领域有个概念叫做自描述。所谓自描述，可以理解为：文档本身包含了自身与其他文档交互相关的描述信息，不需要其他的配置文件或者额外信息来描述。<br>&emsp;&emsp; 而 JSON Schema 就是自描述的，它本身就是一份很完善的说明文档，字段的含义说明、该如何取值、格式的要求等都清晰明了。</p><h4 id="用于生成模拟数据"><a href="#用于生成模拟数据" class="headerlink" title="用于生成模拟数据"></a>用于生成模拟数据</h4><p>&emsp;&emsp;通过标签函数生成模拟数据，只能解决基本的格式要求。比如 string 类型的字段，模拟出来的数据，无非是一个随机字符串。<br>&emsp;&emsp;但在 JSON Schema 中，由于字段的描述不仅仅是类型，更多的约束条件，可以确保模拟数据更接近于真实数据。</p><h4 id="用于校验数据，实现自动化测试"><a href="#用于校验数据，实现自动化测试" class="headerlink" title="用于校验数据，实现自动化测试"></a>用于校验数据，实现自动化测试</h4><p>&emsp;&emsp;接口数据的校验工作，往往依赖于测试代码逻辑和用例。如果用 JSON Schema 描述一个数据接口，就不需要再编写测试代码了，所有的逻辑都可以移植到 JSON Schema 中维护。</p><h4 id="基本约束"><a href="#基本约束" class="headerlink" title="基本约束"></a>基本约束</h4><p> &emsp;&emsp;在 JSON Schema 的世界里，一个空对象，可以描述和校验任意形式的 JSON 数据：</p>]]></content>
     
